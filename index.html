@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Travel Guide</title>
+  <style>
+    
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Travel Guide</h1>
+  </header>
+  <main>
+    <nav>
+      <a class="active" href="#">Home</a>
+      <a href="packages.html">Packages</a>
+      <a href="aboutus.html">About Us</a>
+    </nav>
+
+
+    <p style="text-align: center; color:white; font-size: xx-large; font-style: oblique; padding-top: 5%; text-decoration: solid; text-justify: auto; font-weight: 900;">
+      MAKE YOUR VACATION COMFORTABLE</p>
+    <p style="text-align: center; color: white;font-style: oblique; font-weight: 900;text-decoration: solid; text-justify: auto; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; font-size: larger;">
+      Explore our various packages click on the button below</p>
+    <br>
+    <div class="button-container">
+      <a href="packages.html" class="button" id="toggleButton">Explore Now</a>
+    </div>
+
+  </main>
+
+  <script>
+   
+    const toggleButton = document.getElementById('toggleButton');
+
+   
+    toggleButton.addEventListener('mouseenter', function() {
+      toggleButton.style.backgroundColor = '#777';
+    });
+
+    toggleButton.addEventListener('mouseleave', function() {
+      toggleButton.style.backgroundColor = '';
+    });
+  </script>
+
+</body>
+
+</html>

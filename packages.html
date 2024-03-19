@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Packages</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(226, 226, 251);
+    }
+
+    header {
+      background-color: #f0f282;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      font-size: xx-large;
+      font-style: oblique;
+    }
+
+    nav {
+      background-color: #f9f4f9;
+      padding: 10px;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      color: #333;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      color: #333;
+    }
+
+    nav a.active {
+      background-color: #333;
+      color: #fff;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .package {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      overflow: hidden;
+      width: calc(33.33% - 10px); /* Adjust the width to accommodate three packages in a row */
+     
+    }
+
+    .package img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 0;
+    }
+
+    .package-content {
+      padding: 10px;
+    }
+
+    .package-title {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    .package-description {
+      color: #666;
+    }
+
+    .package-price {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .package-button {
+      background-color: #333;
+      border: none;
+      color: #fff;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+
+    footer {
+      background-color: #333;
+      overflow: hidden;
+      top: 100%;
+      bottom: 0%;
+    }
+
+    footer a {
+      text-decoration: none;
+      padding: 20px;
+      text-align: center;
+      float: left;
+      color: white;
+    }
+  </style>
+  <script>
+    // Function to open a small window with more details
+    function openDetails(url) {
+      // Open a new window with the provided URL
+      window.open(url, "_blank", "width=600,height=900");
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Travel Guide</h1>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a class="active" href="packages.html">Packages</a>
+    <a href="aboutus.html">About Us</a>
+  </nav>
+
+  <h2 style="text-align: center; text-decoration-color: #666">Travel Packages</h2>
+
+  <div class="container">
+    <div class="package">
+      <img src="https://fthmb.tqn.com/Xqg77lMGJaUcMQOtFjfTQr5jfY0=/6102x3947/filters:fill(auto,1)/malaysia-travel-583d01ac5f9b58d5b13cec0d.jpg" alt="Package 1" width="250px" height="5px" />
+      <div class="package-content">
+        <h2 class="package-title">Tour to Malaysia</h2>
+        <p class="package-description">
+          
+        </p>
+        <p class="package-price"> Rs 25000/-</p>
+        <a href="booking.html" class="package-button">Book Now</a>
+        <a href="#" onclick="openDetails('malaysia.html')">More Details</a>
+      </div>
+    </div>
+
+    <div class="package">
+      <img src="https://th.bing.com/th/id/OIP.sKe-0z1DY9k3ZejPVMk_0gHaEo?pid=ImgDet&rs=1" alt="Package 2" />
+      <div class="package-content">
+        <h2 class="package-title">Tour To Paris</h2>
+        <p class="package-description">
+          
+        </p>
+        <p class="package-price">Rs 35000/-</p>
+        <a href="booking.html" class="package-button">Book Now</a>
+        <a href="#" onclick="openDetails('paris.html')">More Details</a>
+      </div>
+    </div>
+    <div class="package">
+      <img src="https://wallpaperaccess.com/full/32511.jpg" alt="Package 1" width="250px" height="5px" />
+      <div class="package-content">
+        <h2 class="package-title">Tour to London</h2>
+        <p class="package-description">
+          
+        </p>
+        <p class="package-price">50000/-</p>
+        <a href="booking.html" class="package-button">Book Now</a>
+        <a href="#" onclick="openDetails('malaysia.html')">More Details</a>
+      </div>
+    </div>
+    <div class="package">
+        <img src="https://blog.raynatours.com/wp-content/uploads/2020/11/merlion-park.jpg" alt="Package 1" width="250px" height="5px" />
+        <div class="package-content">
+          <h2 class="package-title">Tour to Singapore</h2>
+          <p class="package-description">
+            
+          </p>
+          <p class="package-price">Rs 95000/-</p>
+          <a href="booking.html" class="package-button">Book Now</a>
+          <a href="#" onclick="openDetails('malaysia.html')">More Details</a>
+        </div>
+      </div>
+      <div class="package">
+        <img src="https://www.pixelstalk.net/wp-content/uploads/2016/10/Opera-house-australia-photos.jpg" alt="Package 1" width="250px" height="5px" />
+        <div class="package-content">
+          <h2 class="package-title">Tour to Australia</h2>
+          <p class="package-description">
+            
+          </p>
+          <p class="package-price">Starting Rs 70000/-</p>
+          <a href="booking.html" class="package-button">Book Now</a>
+          <a href="#" onclick="openDetails('malaysia.html')">More Details</a>
+        </div>
+      </div>
+      <div class="package">
+        <img src="https://4.bp.blogspot.com/-9E_KTNVHeWU/VNGeKvoBZMI/AAAAAAAAMSc/6vjnkEaqxQw/s1600/Burj%2BKhalifa%2BPhoto%2Bat%2BNight%2B%2B03.jpg" alt="Package 1" width="250px" height="5px" />
+        <div class="package-content">
+          <h2 class="package-title">Tour to Dubai</h2>
+          <p class="package-description">
+            
+          </p>
+          <p class="package-price">Rs 25000/-</p>
+          <a href="booking.html" class="package-button">Book Now</a>
+          <a href="#" onclick="openDetails('malaysia.html')">More Details</a>
+        </div>
+      </div>
+      <div class="package">
+        <img src="https://elevenmyanmar.com/sites/news-eleven.com/files/news-images/bali_2.jpg" alt="Package 1" width="250px" height="5px" />
+        <div class="package-content">
+          <h2 class="package-title">Tour to Bali</h2>
+          <p class="package-description">
+            
+          </p>
+          <p class="package-price">Stating at Rs 29000/-</p>
+          <a href="booking.html" class="package-button">Book Now</a>
+          <a href="#" onclick="openDetails('malaysia.html')">More Details</a>
+        </div>
+      </div>
+      <div class="package">
+        <img src="https://wallpaperaccess.com/full/32511.jpg" alt="Package 1" width="250px" height="5px" />
+        <div class="package-content">
+          <h2 class="package-title">Tour to Europe</h2>
+          <p class="package-description">
+            
+          </p>
+          <p class="package-price">Rs 25000/-</p>
+          <a href="booking.html" class="package-button">Book Now</a>
+          <a href="#" onclick="openDetails('malaysia.html')">More Details</a>
+        </div>
+      </div>
+      <div class="package">
+        <img src="https://cdn.pixabay.com/photo/2016/09/15/01/57/temple-1670926_1280.jpg" alt="Package 1" width="250px" height="5px" />
+        <div class="package-content">
+          <h2 class="package-title">Tour to Thailand</h2>
+          <p class="package-description">
+            
+          </p>
+          <p class="package-price">Rs 100000/-</p>
+          <a href="booking.html" class="package-button">Book Now</a>
+          <a href="#" onclick="openDetails('malaysia.html')">More Details</a>
+        </div>
+      </div>
+  </div>
+
+  <footer>
+    <a href="#">Contact Us</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Service</a>
+  </footer>
+</body>
+</html>

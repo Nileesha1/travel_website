@@ -1,0 +1,55 @@
+body{
+   margin: 0;
+  padding: 0;
+  background-image: url('https://cdn.pixabay.com/photo/2017/01/10/21/01/background-1970231_1280.jpg');
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+
+#form{
+    background-color: rgb(255, 255, 255);
+    width:25%;
+    border-radius: 4px;
+    margin:120px auto;
+    padding:50px;
+    box-shadow: 10px 10px 5px rgb(82, 11, 77);
+}
+.signup-link {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #888;
+}
+
+.signup-link:hover {
+    color: #555;
+}
+#links {
+    text-align: center;
+    margin-top: 20px;
+}
+  
+  .link {
+    color: #333;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  .link:hover {
+    color: #555;
+  }
+#btn{
+    color:rgb(255, 255, 255);
+    background-color: rgb(108, 22, 189);
+    padding:10px;
+    font-size: large;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 570px) {
+    #form {
+      width: 65%;
+      margin-left:none;
+      padding:40px;
+    }
+  }

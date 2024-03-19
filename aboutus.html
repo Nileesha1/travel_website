@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Us - Travel Guide</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('https://images.designtrends.com/wp-content/uploads/2016/04/04071226/HD-Travel-Wallpaper.jpg');
+      background-size: cover;
+    }
+    nav {
+      background-color: rgba(255, 255, 255, 0.046);
+      padding: 10px;
+      overflow: hidden;
+    }
+    nav a {
+      float: left;
+      color: #f2efef;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #fff;
+      color: #333333;
+    }
+    nav a.active {
+      background-color: #333;
+      color: #fff;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.078);
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 50px;
+      background-color: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      top: 50%;
+      overflow: hidden;
+      transition: max-height 0.5s ease;
+      max-height: 0;
+    }
+    .container.expanded {
+      max-height: none;
+    }
+    h1 {
+      text-align: center;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: xx-large;
+      font-style: oblique;
+    }
+    p {
+      margin-bottom: 10px;
+    }
+    .arrow-button {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 10px;
+      font-size: 20px;
+      border: none;
+      background: none;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    // JavaScript code
+    document.addEventListener("DOMContentLoaded", () => {
+      const container = document.querySelector(".container");
+      const arrowButton = document.createElement("button");
+      arrowButton.textContent = "▼ Show More";
+      arrowButton.classList.add("arrow-button");
+
+      arrowButton.addEventListener("click", () => {
+        container.classList.toggle("expanded");
+        if (container.classList.contains("expanded")) {
+          arrowButton.textContent = "Show Less";
+        } else {
+          arrowButton.textContent = "Show More";
+        }
+      });
+
+      container.parentElement.appendChild(arrowButton);
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Travel Guide</h1>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="packages.html">Packages</a>
+    <a class="active" href="aboutus.html">About Us</a>
+  </nav>
+  <br>
+  <div class="container">
+    <h1>About Us - Travel Guide</h1>
+    <!-- <br> -->
+    <div class="content">
+      <p>Welcome to Travel Guide! We are passionate about helping travelers explore the world and create unforgettable experiences. With our expertise and dedication, we strive to provide you with the best travel recommendations and tips.</p>
+      <p>Our mission is to inspire and assist travelers in discovering new destinations, finding the perfect accommodations, and creating memorable itineraries. We believe that every journey should be unique, tailored to your preferences, and filled with remarkable adventures.</p>
+      <p>Join us on this exciting travel journey and let us be your trusted companion in planning your dream vacations. Together, let's uncover the beauty and wonders of the world!</p>
+    </div>
+  </div>
+</body>
+</html
